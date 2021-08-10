@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'student',
-    'rest_framework'
+    'rest_framework',
+    'django_celery_beat'
 ]
 
 MIDDLEWARE = [
@@ -71,6 +72,8 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'textutile.wsgi.application'
 
+# Celery Configuration Options
+CELERY_TIMEZONE = "Asia/Kolkata"
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
